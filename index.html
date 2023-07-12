@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Tebak Angka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navbar Start-->
+    <nav class="navi">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html">Data Diri Pembuat</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li>
+          <a href="http://elearning.bsi.ac.id/login">Elearning MyBest</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Game Section Start-->
+    <section class="game-section">
+      <h1>Permainan Tebak Angka</h1>
+      <input type="number" id="guessInput" placeholder="Masukkan angka" />
+      <button onclick="checkGuess()">Tebak</button>
+      <p id="message"></p>
+      <button id="resetButton" onclick="resetGame()" style="display: none">
+        Ulangi Permainan
+      </button>
+    </section>
+    <!--Game Section End-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
